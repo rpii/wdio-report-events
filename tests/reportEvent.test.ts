@@ -1,4 +1,4 @@
-import "../src/wdio-process.d"
+// import "../src/wdio-process.d"
 import ReportEvents  from "../src/wdio-report-events" ;
 
 import  { expect } from  "chai";

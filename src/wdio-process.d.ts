@@ -8,8 +8,8 @@ declare global {
         interface Process {
             emit(event: "test:log", message: string): boolean;
             emit(event: "test:screenshot", filename: string): boolean;
-            // on(event: "test:log", message: string): boolean;
-            // on(event: "test:screenshot", filename: string): boolean;
+            on(event: "test:log", listener: MessageListener): this;
+            on(event: "test:screenshot", listener: MessageListener): this;
         }
     }
 }

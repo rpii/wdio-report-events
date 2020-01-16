@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf ./lib",
     "build": "tsc",
-    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "test": "mocha -r ts-node/register -r tsconfig-paths/register tests/**/*.test.ts",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json --project",
     "prepare": "npm run build",
@@ -41,6 +41,7 @@
     "chai": "^4.2.0",
     "mocha": "^7.0.0",
     "ts-node": "^8.6.2",
+    "tsconfig-paths": "3.9.0",
     "@types/node": "^13.1.7",
     "@types/chai": "^4.2.7",
     "@types/mocha": "^5.2.7"

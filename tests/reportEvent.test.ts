@@ -1,5 +1,8 @@
+import "../src/wdio-process.d"
 import ReportEvents  from "../src/wdio-report-events" ;
+
 import  { expect } from  "chai";
+
 // TODO Work in Progress
 // saveScreenshot(filepath) {
 //     let test = this.getTest(this.testUid) ;

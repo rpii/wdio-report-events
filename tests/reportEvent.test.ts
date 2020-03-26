@@ -1,16 +1,15 @@
-// import "../src/wdio-process.d"
 import ReportEvents  from "../src/wdio-report-events" ;
 
 import  { expect } from  "chai";
 
 export class EventListener {
 
-    saveScreenshot(filepath) {
+    saveScreenshot(filepath:string ) {
         console.log("screenshot event sink:" + filepath) ;
         expect(true,"screenshot event fired:" + filepath) ;
     }
 
-    saveMessage(message) {
+    saveMessage(message:string) {
         console.log("message event sink:" + message)
         expect(true,"message event fired:" + message) ;
     }

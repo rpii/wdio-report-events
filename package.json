@@ -1,9 +1,9 @@
 {
   "name": "@rpii/wdio-report-events",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Abstracts the event driven messaging to pass screenshots and log data to webdriverio reports",
   "main": "lib/wdio-report-events",
-  "types": "lib/wwdio-report-events.d.ts",
+  "types": "lib/wdio-report-events.d.ts",
   "scripts": {
     "clean": "rimraf ./lib",
     "build": "tsc",
@@ -13,9 +13,7 @@
     "lint": "tslint -p tsconfig.json --project",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "preversion": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -34,22 +32,19 @@
   },
   "homepage": "https://github.com/rpii/wdio-report-events#readme",
   "devDependencies": {
-    "rimraf": "^3.0.0",
-    "typescript": "^3.7.4",
-    "tslint": "5.20.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3",
+    "tslint": "6.1.0",
     "prettier": "1.19.1",
     "tslint-config-prettier": "1.18.0",
     "chai": "^4.2.0",
     "mocha": "^7.0.0",
-    "ts-node": "^8.6.2",
+    "ts-node": "^8.8.1",
     "ts-mocha": "6.0.0",
     "tsconfig-paths": "3.9.0",
     "@types/node": "^13.1.7",
-    "@types/chai": "^4.2.7",
+    "@types/chai": "^4.2.11",
     "@types/mocha": "^5.2.7"
-  },
-  "dependencies": {
-    "xlsx": "^0.15.3"
   },
   "mocha": {
     "ui": "tdd"

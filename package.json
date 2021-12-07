@@ -1,7 +1,7 @@
 {
   "name": "@rpii/wdio-report-events",
-  "version": "0.1.4",
-  "description": "Abstracts the event driven messaging to pass screenshots and log data to webdriverio reports",
+  "version": "0.2.0",
+  "description": "Abstracts the event driven messaging to pass screenshots, videos  and log data to the report module",
   "main": "lib/wdio-report-events",
   "types": "lib/wdio-report-events.d.ts",
   "scripts": {

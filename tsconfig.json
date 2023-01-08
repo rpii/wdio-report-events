@@ -1,18 +1,14 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "es6",
-    "module": "commonjs",
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution":"nodenext",
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
     "esModuleInterop": true
   },
-//  "paths": {
-//    "src/*": [
-//      "src/*"
-//    ]
-//  },
   "types": [
     "node",
     "chai"

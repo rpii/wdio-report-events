@@ -1,6 +1,7 @@
 
 export default class ReportEvents {
-
+    constructor() {
+    }
     public logMessage(message: string) : any {
         process.emit('test:log', message);
         return this;

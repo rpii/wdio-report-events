@@ -1,5 +1,7 @@
 # @rpii/wdio-report-events
 
+### Updated for module compatibility with webdriver 8
+
 Abstracts the event driver messaging to pass screenshots and log data to webdriverio reports
 
 Used internally by various packages that need to fire events, and listen for them.  
